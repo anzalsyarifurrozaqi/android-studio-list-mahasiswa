@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".row_list_mahasiswa">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:stretchColumns="0,1,2">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                >
+                <TextView
+                    android:id="@+id/no"
+                    android:layout_width="1sp"
+                    android:layout_height="match_parent"
+                    android:text="No"
+                    android:layout_column="0"
+                    android:layout_margin="1sp"
+                    android:textSize="16sp"
+                    />
+                <TextView
+                    android:id="@+id/nim"
+                    android:layout_width="50sp"
+                    android:layout_height="match_parent"
+                    android:text="NIM"
+                    android:layout_column="1"
+                    android:textSize="16sp"
+                    />
+                <TextView
+                    android:id="@+id/namaMhs"
+                    android:layout_width="15sp"
+                    android:layout_height="match_parent"
+                    android:text="Nama Mhasiswa"
+                    android:textSize="16sp"
+                    android:layout_column="2"
+                    />
+            </TableRow>
+        </TableLayout>
+    </LinearLayout>
+
+</LinearLayout>
